@@ -9,4 +9,17 @@
 html{
     scroll-behavior: smooth;
     scrollbar-width: thin;
-  }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*=============== NAV ===============*/
+
+.nav-logo{
+display: flexbox;
+
+}
