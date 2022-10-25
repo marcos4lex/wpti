@@ -7,19 +7,34 @@
 }
 
 html{
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
+
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+header{
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
+
 
 /*=============== NAV ===============*/
-
-.nav-logo{
-display: flexbox;
-
+.nav-logo .main-logo{
+  width: 230px;
 }
+
+.nav ul{
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*=============== BODY ===============*/
