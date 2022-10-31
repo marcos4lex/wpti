@@ -1,44 +1,239 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html><html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
+
+    <title>WPTI - Soluções em TI
+    </title>
+
+    <meta name="description" content="Description">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+        
+    <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"> 
+
+    <link rel="stylesheet" href="assets/css/libs.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload" href="assets/fonts/istok-web-v15-latin/istok-web-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/istok-web-v15-latin/istok-web-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat-v15-latin/montserrat-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat-v15-latin/montserrat-v15-latin-600.woff2" as="font" type="font/woff2" crossorigin>
 
     <link rel="preload" href="assets/fonts/material-icons/material-icons.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/material-icons/material-icons-outlined.woff2" as="font" type="font/woff2" crossorigin>
-    
-    <title>WP-Saquarema</title>
+
 </head>
+
 <body>
-    <header>
 
-        <div class="nav-logo">
-            <img src="assets/img/main-logo.jpeg" alt="" class="main-logo">
+	<main class="main">
+                
+        <div class="main-inner">
+
+            <!-- Menu mobile -->
+            <nav class="mmm">
+                <div class="mmm-content">
+                    <ul class="mmm-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-nos.html">Sobre nós</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="abrir-chamado.html">Abrir Chamado</a></li>
+                        <li><a href="suporte.html">Suporte</a></li>
+                        <li><a href="compliance.html">Compliance</a></li>
+                        <li><a href="contate-nos.html">Contate-nos</a></li>
+                    </ul>
+                </div>
+            </nav><!-- Fim do menu mobile -->
+
+            <!-- Começo header -->
+            <header class="header">
+                    
+                <!-- header top -->
+                <nav class="header-top">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+
+                                <!-- header top info -->
+                                <ul class="header-top-info">
+                                    <li>
+                                        <a href="mailto:mail@example.com">
+                                        <i class="material-icons md-18">mail_outline</i>
+                                        <span>wpti@workingplus.com</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:mail@example.com" class="formingHrefTel">
+                                            <i class="material-icons md-18">phone_in_talk</i>
+                                            <span>21 98321-5568</span>
+                                        </a>
+                                    </li>
+                                </ul><!-- Fim header top info -->
+                            </div>
+                        </div>
+                    </div>
+                </nav><!-- Fim header top -->
+
+                <!-- Começo header fixado -->
+                <nav class="header-fixed">
+                    <div class="container">
+                        <div class="row flex-nowrap align-items-center justify-content-between">
+
+                            <div class="col-auto d-block d-lg-none header-fixed-col">
+                                <div class="main-mnu-btn">
+                                    <span class="bar bar-1"></span>
+                                    <span class="bar bar-2"></span>
+                                    <span class="bar bar-3"></span>
+                                    <span class="bar bar-4"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto header-fixed-col">
+                                <!-- inicio logo -->
+                                <a href="/" class="logo" title="WPTI">
+                                    <img src="assets/img/logo.jpeg" width="145" height="50" alt="WPTI">
+                                </a><!-- Fim logo -->
+                            </div>
+
+                            <div class="col-auto header-fixed-col d-none d-lg-block col-static">
+                                
+                                <!-- Começo main menu -->
+                                <nav class="main-mnu">
+                                    <ul class="main-mnu-list">
+                                        <li><a href="index.html" data-title="Inicio"><span>Inicio</span></a></li>
+                                        <li><a href="sobre-nos.html" data-title="Sobre nós"><span>Sobre nós</span></a></li>
+                                        <li><a href="servicos.html" data-title="Serviços"><span>Serviços</span></a></li>
+                                        <li><a href="abrir-chamado.html" data-title="Abrir Chamado"><span>Abrir Chamado</span></a></li>
+                                        <li><a href="suporte.html" data-title="Suporte"><span>Suporte</span></a></li>
+                                        <li><a href="compliance.html" data-title="Compliance"><span>Compliance</span></a></li>
+                                        <li><a href="contate-nos.html" data-title="Contate-nos"><span>Contate-nos</span></a></li>
+                                    </ul>
+                                </nav><!-- Fim main menu -->
+                            </div>
+
+                            <div class="col-auto header-fixed-col col-static">
+                                <!-- Começo header actions -->
+                                <ul class="header-actions">
+
+
+                                    <!-- Começo header navbar -->
+                                    <li class="d-block d-lg-none">
+                                        <div class="header-navbar">
+                                            <div class="header-navbar-btn">
+                                                <i class="material-icons md-24">more_vert</i>
+                                            </div>
+                                            <ul class="header-navbar-content">
+                                                <li>
+                                                    <a href="mailto:mail@example.com">
+                                                        <i class="material-icons md-20">mail_outline</i>
+                                                        <span>mail@example.com</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="mailto:mail@example.com" class="formingHrefTel">
+                                                        <i class="material-icons md-20">support_agent</i>
+                                                        <span>1-888-777-1234</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li><!-- Fim header navbar -->
+                                </ul><!-- Fim header actions -->
+                            </div>
+                        </div>
+                    </div>
+                </nav><!-- Fim header fixed -->
+            </header><!-- Fim header -->
+
+            <!-- Inicio intro -->
+            <div class="section-bgc intro">
+                <div class="intro-slider">
+                    <div class="intro-item" style="background-image: url(assets/img/intro-img1.jpg);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="intro-content">
+                                        <div class="section-heading shm-none">
+                                            <div class="section-subheading"></div>
+                                            <h1>Seja bem-vindo a<br> Working Plus</h1>
+                                            <p class="section-desc">Empresa com visão arrojada na prestação de serviços e comércio na área de informática. Possuindo equipe técnica altamente especializada e certificada por todos os maiores fabricantes, além de treinamento constante.</p>
+                                        </div>
+                                        <div class="wrap-btn intro-btns">
+                                            <a href="https://www.templatemonster.com/website-templates/pathsoft-it-solutions-for-your-business-services-website-template-83414.html" class="btn btn-with-icon btn-small ripple">
+                                                <span>Sobre nós</span>
+                                                <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
+                                            </a>
+                                            <a href="contact-us.html" class="btn btn-with-icon btn-border btn-small ripple">
+                                                <span>Nossos Serviços</span>
+                                                <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Fim intro -->
+
+            <!-- Começo servicos -->
+            <section class="section services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-heading heading-center">
+                                <div class="section-subheading">Áreas que atendemos</div>
+                                <h2>Nossos Serviços</h2>
+                            </div> 
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12 item">
+                            <a href="single-services.html" class="iitem item-style">
+                                <div class="iitem-icon">
+                                    <i class="material-icons material-icons-outlined md-48">corporate_fare</i>
+                                </div>
+                                <div class="iitem-icon-bg">
+                                    <i class="material-icons material-icons-outlined">corporate_fare</i>
+                                </div>
+                                <h3 class="iitem-heading item-heading-large">Soluções corporativas</h3>
+                                <div class="iitem-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 item">
+                            <a href="single-services.html" class="iitem item-style">
+                                <div class="iitem-icon">
+                                    <i class="material-icons material-icons-outlined md-48">support_agent</i>
+                                </div>
+                                <div class="iitem-icon-bg">
+                                    <i class="material-icons material-icons-outlined">support_agent</i>
+                                </div>
+                                <h3 class="iitem-heading item-heading-large">Atendimento ao Cliente</h3>
+                                <div class="iitem-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it.</div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <div class="section-btns justify-content-center">
+                                <a href="services.html" class="btn btn-with-icon btn-w240 ripple">
+                                    <span>See All Services</span>
+                                    <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- Fim serviços -->
         </div>
+    </main>
 
-        <div class="nav">
-            <ul>
-                <li>Início</li>
-                <li>Abrir chamado</li>
-                <li>História</li>
-                <li>Equipe</li>
-            </ul>
-        </div>
-
-        <div class="nav-unidade">
-            <div>Unidade</div>
-            <div>Saquarema</div>
-        </div>
-
-    </header>
-
-    <div>
-        <img src="assets/img/intro-img1.jpg" alt="">
-    </div>
-
-</body>
-
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/lozad/lozad.min.js"></script>
+    <script src="assets/libs/device/device.js"></script>
+    <script src="assets/libs/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
+    <script src="assets/libs/spincrement/jquery.spincrement.min.js"></script>
+    <script src="assets/libs/jquery-validation-1.19.3/jquery.validate.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+    </body>
 
 </html>
