@@ -547,6 +547,7 @@ blockquote footer {
     margin-right: 0;
 }
 
+
 .tabs-nav li::after {
     content: "";
     position: absolute;
