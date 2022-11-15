@@ -440,8 +440,7 @@ code {
 
 input[type="text"],
 input[type="email"],
-input[type="assunto"],
-input[type="tel"],
+input[type="subject"],
 input[type="password"],
 input[type="number"],
 input[type="search"],
@@ -474,8 +473,7 @@ select {
 
 input[type="text"]:focus,
   input[type="email"]:focus,
-  input[type="assunto"]:focus,
-  input[type="tel"]:focus,
+  input[type="subject"]:focus,
   input[type="password"]:focus,
   input[type="number"]:focus,
   input[type="search"]:focus,
@@ -502,8 +500,7 @@ textarea {
 
 .form-field input[type="text"],
   .form-field input[type="email"],
-  .form-field input[type="assunto"],
-  .form-field input[type="tel"],
+  .form-field input[type="subject"],
   .form-field input[type="password"],
   .form-field input[type="number"],
   .form-field input[type="search"],

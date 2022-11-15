@@ -201,53 +201,45 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-8 col-md-7 content-item">
-                                <form action="#!" method="post" class="contact-form contact-form-padding">
-                                    <!-- Begin hidden Field for send form -->
-                                    <input type="hidden" name="form_subject" value="Contact form">
-                                    <!-- End hidden Field for send form -->
-                                    <div class="row gutters-default">
-                                        <div class="col-12">
-                                            <h3>Entre em Contato</h3>
-                                        </div>
-                                        <div class="col-xl-4 col-sm-6 col-12">
-                                            <div class="form-field">
-                                                <label for="contact-name" class="form-field-label">Nome</label>
-                                                <input type="text" class="form-field-input" name="ContactName" value="" autocomplete="off" required="required" id="contact-name">
+                            <div class="col-xl-8 col-md-7 content-item">                
+                                <div class="container">
+                                    <h3>Entre em Contato</h3>
+                                    <form action="https://formsubmit.co/marcosalexandredsa@gmail.com" method="POST">
+                                        <div class="row gutters-default">
+                                            <div class="col-xl-4 col-sm-6 col-12">
+                                                <div class="form-field">
+                                                    <label for="contact-name" class="form-field-label">Nome</label>
+                                                    <input type="text" class="form-field-input" name="name" value="" autocomplete="on" required="required" id="contact-name">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-sm-6 col-12">
+                                                <div class="form-field">
+                                                    <label for="contact-email" class="form-field-label">E-mail</label>
+                                                    <input type="email" class="form-field-input" name="email" value="" autocomplete="on" required="required" id="contact-email">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-sm-6 col-12">
+                                                <div class="form-field">
+                                                    <label for="contact-email" class="form-field-label">Assunto</label>
+                                                    <input type="text" class="form-field-input" name="subject" value="" autocomplete="off" required="required" id="contact-subjetc">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-field">
+                                                    <label for="contact-message" class="form-field-label">Sua Mensagem</label>
+                                                    <textarea name="message" class="form-field-input" id="contact-message" name="message" cols="30" rows="6" required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-btn">
+                                                    <button type="submit" class="btn btn-w240 ripple"><span>Envie</span></button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-4 col-sm-6 col-12">
-                                            <div class="form-field">
-                                                <label for="contact-phone" class="form-field-label">Telefone</label>
-                                                <input type="tel" class="form-field-input mask-phone" name="ContactPhone" value="" autocomplete="off" required="required" id="contact-phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-4 col-12">
-                                            <div class="form-field">
-                                                <label for="contact-email" class="form-field-label">E-mail</label>
-                                                <input type="email" class="form-field-input" name="ContactEmail" value="" autocomplete="off" required="required" id="contact-email">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12 col-12">
-                                            <div class="form-field">
-                                                <label for="contact-email" class="form-field-label">Assunto</label>
-                                                <input type="assunto" class="form-field-input" name="ContactAssunto" value="" autocomplete="off" required="required" id="contact-assunto">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-field">
-                                                <label for="contact-message" class="form-field-label">Sua Mensagem</label>
-                                                <textarea name="ContactMessage" class="form-field-input" id="contact-message" autocomplete="off" required="required" cols="30" rows="6"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-btn">
-                                                <button type="submit" class="btn btn-w240 ripple"><span>Envie</span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                                    </form>
+                                </div>
+                            </div> <!-- Final do Formulario -->
+
                         </div>
                     </div>
                 </div>
