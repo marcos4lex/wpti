@@ -300,8 +300,9 @@ code {
     border-radius: .2rem;
 }
 
-
-/* inicio do Preloader */
+/*-------------------------
+    Inicio do Preloader
+---------------------------*/
  
 #preloader {
     position:fixed;
@@ -362,48 +363,61 @@ code {
     opacity: 1; 
   } 
 }
-
-    /* Fim do Preloader */
-
-    
-    /* Início do Equipamentos */
-
 /*---------------------
-  Shop Grid
+    Fim do Preloader
 -----------------------*/
 
-    
-.product__pagination{
-    padding-top: 20px;
-    text-align: center;
-}
-    
-.product__pagination a{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #b2b2b2;
-    font-size: 14px;
-    color: #b2b2b2;
-    font-weight: 700;
-    line-height: 28px;
-    text-align: center;
-    margin-right: 14px;
-}
-    
-.product__pagination a:hover{
-    background: #63636b;
-    border-color: #63636b;
-    color: #ffffff;
-}
-    
-.product__pagination a:last-child{
-    margin-right: 0;
-}
+
+/*------------------------------------
+    Início do Equipamentos
+-------------------------------------*/
 
 
 /*---------------------
-  Sidebar
+    Pagination
+-----------------------*/
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+   
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem;
+    }
+}
+   
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem;
+    }
+}
+   
+.padding {
+    padding: 5rem;
+}
+    
+.pagination, .jsgrid .jsgrid-pager {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+   
+.pagination .page-item.active .page-link, .jsgrid .jsgrid-pager .page-item.active .page-link, .jsgrid .jsgrid-pager .active.jsgrid-pager-nav-button .page-link, .jsgrid .jsgrid-pager .active.jsgrid-pager-page .page-link, .pagination .page-item.active .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .page-item.active .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item.active a, .jsgrid .jsgrid-pager .active.jsgrid-pager-nav-button a, .pagination .page-item.active .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item.active .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item.active a, .jsgrid .jsgrid-pager .active.jsgrid-pager-page a, .pagination .page-item:hover .page-link, .jsgrid .jsgrid-pager .page-item:hover .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:hover .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page:hover .page-link, .pagination .page-item:hover .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .page-item:hover .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:hover a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:hover a, .pagination .page-item:hover .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item:hover .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:hover a, .jsgrid .jsgrid-pager .jsgrid-pager-page:hover a, .pagination .page-item:focus .page-link, .jsgrid .jsgrid-pager .page-item:focus .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:focus .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page:focus .page-link, .pagination .page-item:focus .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .page-item:focus .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:focus a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:focus a, .pagination .page-item:focus .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item:focus .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:focus a, .jsgrid .jsgrid-pager .jsgrid-pager-page:focus a, .pagination .page-item:active .page-link, .jsgrid .jsgrid-pager .page-item:active .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:active .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page:active .page-link, .pagination .page-item:active .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .page-item:active .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:active a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:active a, .pagination .page-item:active .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item:active .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:active a, .jsgrid .jsgrid-pager .jsgrid-pager-page:active a {
+    background: #405189;
+    background: var(--el-gradient1);
+    color: #ffffff;
+}
+   
+.page-link{
+    color:black;
+}
+
+/*---------------------
+    Sidebar
 -----------------------*/
 
 .sidebar__item {
@@ -432,8 +446,9 @@ code {
     color: var(--main-color);
 }
 
-
-/* Fim do Equipamentos */
+/*------------------------------------
+    Fim do Equipamentos
+-------------------------------------*/
 
 
 
