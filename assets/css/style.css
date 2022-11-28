@@ -372,50 +372,6 @@ code {
     Início do Equipamentos
 -------------------------------------*/
 
-
-/*---------------------
-    Pagination
------------------------*/
-
-.flex {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-}
-   
-@media (max-width:991.98px) {
-    .padding {
-        padding: 1.5rem;
-    }
-}
-   
-@media (max-width:767.98px) {
-    .padding {
-        padding: 1rem;
-    }
-}
-   
-.padding {
-    padding: 5rem;
-}
-    
-.pagination, .jsgrid .jsgrid-pager {
-    display: flex;
-    padding-left: 0;
-    list-style: none;
-    border-radius: 0.25rem;
-}
-   
-.pagination .page-item.active .page-link, .jsgrid .jsgrid-pager .page-item.active .page-link, .jsgrid .jsgrid-pager .active.jsgrid-pager-nav-button .page-link, .jsgrid .jsgrid-pager .active.jsgrid-pager-page .page-link, .pagination .page-item.active .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .page-item.active .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item.active a, .jsgrid .jsgrid-pager .active.jsgrid-pager-nav-button a, .pagination .page-item.active .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item.active .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item.active a, .jsgrid .jsgrid-pager .active.jsgrid-pager-page a, .pagination .page-item:hover .page-link, .jsgrid .jsgrid-pager .page-item:hover .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:hover .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page:hover .page-link, .pagination .page-item:hover .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .page-item:hover .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:hover a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:hover a, .pagination .page-item:hover .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item:hover .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:hover a, .jsgrid .jsgrid-pager .jsgrid-pager-page:hover a, .pagination .page-item:focus .page-link, .jsgrid .jsgrid-pager .page-item:focus .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:focus .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page:focus .page-link, .pagination .page-item:focus .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .page-item:focus .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:focus a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:focus a, .pagination .page-item:focus .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item:focus .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:focus a, .jsgrid .jsgrid-pager .jsgrid-pager-page:focus a, .pagination .page-item:active .page-link, .jsgrid .jsgrid-pager .page-item:active .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:active .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page:active .page-link, .pagination .page-item:active .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .page-item:active .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:active a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:active a, .pagination .page-item:active .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item:active .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:active a, .jsgrid .jsgrid-pager .jsgrid-pager-page:active a {
-    background: #405189;
-    background: var(--el-gradient1);
-    color: #ffffff;
-}
-   
-.page-link{
-    color:black;
-}
-
 /*---------------------
     Sidebar
 -----------------------*/
@@ -450,6 +406,106 @@ code {
     Fim do Equipamentos
 -------------------------------------*/
 
+/*------------------------------------
+    PAGINATION
+-------------------------------------*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.625rem;
+}
+
+.pagination-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: -0.625rem;
+}
+
+.pagination-list li {
+    margin-left: 0.625rem;
+}
+
+.pagination-list li:hover a, .pagination-list li:hover span, .pagination-list li.active a, .pagination-list li.active span {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.pagination-list li.active a, .pagination-list li.active span {
+    cursor: default;
+    pointer-events: none;
+}
+
+.pagination-list li.pagination-item-arrow a, .pagination-list li.pagination-item-arrow span {
+    color: var(--main-color);
+    border-color: transparent;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.pagination-list li.pagination-item-arrow:hover a, .pagination-list li.pagination-item-arrow:hover span {
+    color: var(--text-primary);
+}
+
+.pagination-list li.pagination-item-disabled a, .pagination-list li.pagination-item-disabled span {
+    color: var(--text-secondary);
+    pointer-events: none;
+}
+
+.pagination-list li.pagination-item-disabled:hover a, .pagination-list li.pagination-item-disabled:hover span {
+    color: var(--text-secondary);
+}
+
+.pagination-list li a, .pagination-list li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    border-radius: var(--el-border-radius-min);
+}
+
+.pagination-list li a.dots, .pagination-list li span.dots {
+    border-color: transparent;
+}
+
+@media only screen and (max-width: 480px) {
+    .pagination-full .pagination-list {
+        padding-bottom: 2.2rem;
+    }
+
+    .pagination-full .pagination-item-arrow {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .pagination-full .pagination-item-arrow-prev {
+        right: 50%;
+        margin-right: 0.625rem;
+    }
+
+    .pagination-full .pagination-item-arrow-first {
+        right: 50%;
+        margin-right: 2.1rem;
+    }
+
+    .pagination-full .pagination-item-arrow-next {
+        left: 50%;
+    }
+
+    .pagination-full .pagination-item-arrow-last {
+        left: 50%;
+        margin-left: 2.1rem !important;
+    }
+}
+/*------------------------------------
+    FIM PAGINATION
+-------------------------------------*/
 
 .btn > i, .btn > span, .btn > svg {
     position: relative;
